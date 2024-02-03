@@ -1,4 +1,7 @@
 naveen.txt
-.terraform/
+iterraform/
 .terraform.lock.hcl
 .gitignore
+terraform.tfstate
+.terraform/
+.terraform
