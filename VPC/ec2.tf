@@ -18,3 +18,4 @@ resource "aws_instance" "terra_ec2" {
     Name = "terra_ec2"
   }
 }
+
