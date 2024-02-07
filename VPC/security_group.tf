@@ -26,6 +26,6 @@ resource "aws_security_group" "terra_security_group" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "terra_sg"
   }
 }
