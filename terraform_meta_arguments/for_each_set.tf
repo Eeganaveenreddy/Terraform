@@ -1,13 +1,13 @@
-resource "aws_iam_user" "terra__iam_user" {
+# resource "aws_iam_user" "terra__iam_user" {
 
-  for_each = toset(["Naveen", "Saveen", "vedha"])
+#   for_each = toset(["Naveen", "Saveen", "vedha"])
 
-  name = each.key
-  tags = {
-    Name = each.value   // Name = "${each.value}" && each.key == each.value
-  }
+#   name = each.key
+#   tags = {
+#     Name = each.value   // Name = "${each.value}" && each.key == each.value
+#   }
 
-}
+# }
 
 /*
 *set of starings
