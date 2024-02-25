@@ -1,10 +1,10 @@
 resource "aws_instance" "terra_ec2" {
-  ami           = var.aws_ami
-  instance_type = var.instance_type
+  ami               = var.aws_ami
+  instance_type     = var.instance_type
   availability_zone = var.aws_region
 
-  key_name = "Jump-server"
-  vpc_security_group_ids = [aws_security_group.ssh.id, aws_security_group.web.id ]
+  key_name               = "Jump-server"
+  vpc_security_group_ids = [aws_security_group.ssh.id, aws_security_group.web.id]
 
   user_data = <<-EOF
   #! /bin/bash
@@ -19,4 +19,3 @@ resource "aws_instance" "terra_ec2" {
     Name = "terra_ec2"
   }
 }
-
