@@ -1,0 +1,1 @@
+instance_type = "c2.medium"
